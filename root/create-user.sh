@@ -14,3 +14,11 @@ sudo bash -c 'cat << EOF > /etc/ld.so.conf.d/gvm.conf
 # gmv libs location
 /opt/gvm/lib
 EOF'
+
+mkdir /opt/gvm
+
+adduser gvm --disabled-password --home /opt/gvm/ --no-create-home --gecos ''
+
+usermod -aG redis gvm
+
+chown gvm:gvm /opt/gvm/
