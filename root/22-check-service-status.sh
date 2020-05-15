@@ -1,5 +1,5 @@
 #!/bin/bash
 
-systemctl status gvmd
-systemctl status gsad
-systemctl status ospd-openvas
+systemctl status --no-pager gvmd
+systemctl status --no-pager gsad
+systemctl status --no-pager ospd-openvas
