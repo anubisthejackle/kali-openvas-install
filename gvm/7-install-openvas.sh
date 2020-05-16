@@ -1,5 +1,9 @@
 #!/bin/bash
 
+cd /opt/gvm/src/
+
+git clone -b openvas-7.0 --single-branch https://github.com/greenbone/openvas.git
+
 cd /opt/gvm/src/openvas
 
 # Because of quirks with Kali 2020.1, we need to change the make config
@@ -15,4 +19,3 @@ cmake -DCMAKE_INSTALL_PREFIX=/opt/gvm ..
 make
 make doc
 make install
-cd /opt/gvm/src

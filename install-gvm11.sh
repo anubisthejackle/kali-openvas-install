@@ -13,7 +13,7 @@ sudo $DIRECTORY/root/2-create-user.sh
 
 # Install the initial GVM scripts as the GVM user
 sudo /bin/su -c "$DIRECTORY/gvm/3-create-user.sh" - gvm
-sudo /bin/su -c "$DIRECTORY/gvm/4-git-clone.sh" - gvm
+
 sudo /bin/su -c "$DIRECTORY/gvm/5-install-gvm-libs.sh" - gvm
 sudo /bin/su -c "$DIRECTORY/gvm/6-install-openvas-smb.sh" - gvm
 sudo /bin/su -c "$DIRECTORY/gvm/7-install-openvas.sh" - gvm
