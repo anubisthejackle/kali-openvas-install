@@ -14,8 +14,10 @@ cd /opt/gvm/src/openvas
 sed -i -e "s/\(-Werror\)\(.*\)/\2 -Wno-error=deprecated-declarations\2/" misc/CMakeLists.txt
 sed -i -e "s/\(-Werror\)\(.*\)/\2 -Wno-error=deprecated-declarations\2/" nasl/CMakeLists.txt
 
-cd build/
+mkdir build/
+cd build
 cmake -DCMAKE_INSTALL_PREFIX=/opt/gvm ..
+
 make
 make doc
 make install
