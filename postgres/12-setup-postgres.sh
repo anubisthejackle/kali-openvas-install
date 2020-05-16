@@ -3,10 +3,6 @@ createuser -DRS gvm
 
 createdb -O gvm gvmd
 
-psql gvmd
-
-create role dba with superuser noinherit
-
-grant dba to gvm
-
-create extension "uuid-ossp"
+psql -c"create role dba with superuser noinherit" gvmd
+psql -c"grant dba to gvm" gvmd
+psql -c"create extension \"uuid-ossp\"" gvmd
