@@ -1,5 +1,5 @@
 #!/bin/bash
-cd gsa
+cd /opt/gvm/src/gsa
 export PKG_CONFIG_PATH=/opt/gvm/lib/pkgconfig:$PKG_CONFIG_PATH
 mkdir build
 cd build/
@@ -8,4 +8,3 @@ make
 make doc
 make install
 touch /opt/gvm/var/log/gvm/gsad.log
-cd /opt/gvm/src

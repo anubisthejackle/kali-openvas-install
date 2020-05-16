@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd openvas-smb
+cd /opt/gvm/src/openvas-smb
 
 export PKG_CONFIG_PATH=/opt/gvm/lib/pkgconfig:$PKG_CONFIG_PATH
 
@@ -12,5 +12,3 @@ cmake -DCMAKE_INSTALL_PREFIX=/opt/gvm ..
 make
 
 make install
-
-cd /opt/gvm/src

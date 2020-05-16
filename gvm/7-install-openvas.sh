@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd openvas
+cd /opt/gvm/src/openvas
 
 # Because of quirks with Kali 2020.1, we need to change the make config
 # We need to change CMakeLists.txt in the misc and nasl directories

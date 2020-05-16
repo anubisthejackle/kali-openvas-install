@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd gvm-libs
+cd /opt/gvm/src/gvm-libs
 
 export PKG_CONFIG_PATH=/opt/gvm/lib/pkgconfig:$PKG_CONFIG_PATH
 
@@ -14,5 +14,3 @@ make
 make doc
 
 make install
-
-cd /opt/gvm/src
