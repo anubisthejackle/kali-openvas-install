@@ -31,6 +31,7 @@ sudo openvas -u
 sudo /bin/su -c "$DIRECTORY/gvm/11-config-and-build-manager.sh" - gvm
 
 # Postgres Scripts
+sudo service postgres start
 sudo /bin/su -c "$DIRECTORY/gvm/12-setup-postgres.sh" - postgres
 
 # Third round of GVM scripts
