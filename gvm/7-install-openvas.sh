@@ -11,8 +11,8 @@ cd /opt/gvm/src/openvas
 
 # Original Line: set (CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Werror")
 # New Line: set (CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Werror -Wno-error=deprecated-declaration")
-sed -i -e "s/\(-Werror\)\(.*\)/\2 -Wno-error=deprecated-declarations\2/" misc/CMakeLists.txt
-sed -i -e "s/\(-Werror\)\(.*\)/\2 -Wno-error=deprecated-declarations\2/" nasl/CMakeLists.txt
+sed -i -e "s/\(-Werror\)\(.*\)/\1 -Wno-error=deprecated-declarations\2/" misc/CMakeLists.txt
+sed -i -e "s/\(-Werror\)\(.*\)/\1 -Wno-error=deprecated-declarations\2/" nasl/CMakeLists.txt
 
 mkdir build/
 cd build
