@@ -32,7 +32,7 @@ sudo /bin/su -c "$DIRECTORY/gvm/11-config-and-build-manager.sh" - gvm
 
 # Postgres Scripts
 sudo systemctl start postgresql.service
-sudo /bin/su -c "$DIRECTORY/gvm/12-setup-postgres.sh" - postgres
+sudo /bin/su -c "$DIRECTORY/postgres/12-setup-postgres.sh" - postgres
 
 # Third round of GVM scripts
 sudo /bin/su -c "$DIRECTORY/gvm/13-manage-certs.sh" - gvm
