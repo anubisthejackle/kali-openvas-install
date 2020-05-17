@@ -50,3 +50,7 @@ sudo $DIRECTORY/root/22-check-service-status.sh
 
 # Fourth round of GVM Scripts
 sudo /bin/su -c "$DIRECTORY/gvm/23-setup-scanner.sh" - gvm
+
+echo "CONGRATULATIONS: OpenVAS is installed!"
+echo "You can access it by visiting: https://127.0.0.1/"
+echo "Your login credentials are admin:admin"
