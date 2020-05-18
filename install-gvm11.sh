@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ $EUID -e 0 ]]; then
+    echo "This script should not be run as root, but instead from an account with sudo access."
+    exit 1
+fi
+
 DIRECTORY=`pwd`
 
 sudo locale-gen en_US.UTF-8
