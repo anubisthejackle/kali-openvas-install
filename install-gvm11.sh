@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $EUID -e 0 ]]; then
+if [[ $EUID -eq 0 ]]; then
     echo "This script should not be run as root, but instead from an account with sudo access."
     exit 1
 fi
