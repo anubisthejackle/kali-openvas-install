@@ -1,4 +1,5 @@
 #!/bin/bash
+source /opt/gvm/bin/ospd-scanner/bin/activate
 mkdir /opt/gvm/var/run/ospd/
 
 cd /opt/gvm/src/
