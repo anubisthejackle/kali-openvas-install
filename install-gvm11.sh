@@ -28,10 +28,11 @@ sudo $DIRECTORY/root/8-fix-redis.sh
 sudo $DIRECTORY/root/9-sudoers.sh
 
 # Next GVM Scripts
-sudo /bin/su -c "$DIRECTORY/gvm/10-install-openvas.sh" - gvm
+sudo /bin/su -c "$DIRECTORY/gvm/7-install-openvas.sh" - gvm
 
 # Update OpenVAS Plugins
-sudo openvas -u
+# sudo openvas -u
+sudo /opt/gvm/sbin/openvas -u
 
 sudo /bin/su -c "$DIRECTORY/gvm/11-config-and-build-manager.sh" - gvm
 
