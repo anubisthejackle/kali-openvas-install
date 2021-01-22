@@ -18,3 +18,4 @@ Simply execute `install-gvm11.sh` with an account that has sudo capabilities. Th
 # How to contribute
 
 When submitting pull requests, please make sure to define which version of Linux you are running, and the state of your current OpenVAS install. These scripts have been tested running Kali Linux 2020.1 on a clean install, with no previous version of OpenVAS installed.
+This script is now tested with Parrot GNU/Linux 4.10 and ubuntu 20.00
